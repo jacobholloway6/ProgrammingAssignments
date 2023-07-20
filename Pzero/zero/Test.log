@@ -1,0 +1,126 @@
+Script started on Thu Jul  6 13:44:35 2023
+]0;cssc1729@edoras:~/projectzero[?1034h[cssc1729@edoras projectzero]$ cd zero
+]0;cssc1729@edoras:~/projectzero/zero[cssc1729@edoras zero]$ make
+gcc -g -std=c99   -c -o testalphabetcount.o testalphabetcount.c
+gcc -g -std=c99   -c -o alphabetcount.o alphabetcount.c
+gcc -o testalphabet testalphabetcount.o alphabetcount.o
+gcc -g -std=c99   -c -o testspecialcharcount.o testspecialcharcount.c
+gcc -g -std=c99   -c -o specialcharcount.o specialcharcount.c
+gcc -o testspecial testspecialcharcount.o specialcharcount.o
+]0;cssc1729@edoras:~/projectzero/zero[cssc1729@edoras zero]$ ./testalphabet 
+File created successfully.
+a -> 2973036
+b -> 556908
+c -> 765864
+d -> 1786752
+e -> 4883076
+f -> 765336
+g -> 809292
+h -> 2818068
+i -> 2586276
+j -> 35112
+k -> 401412
+l -> 1728276
+m -> 1050852
+n -> 2509320
+o -> 2766192
+p -> 562848
+q -> 28776
+r -> 2177076
+s -> 2465496
+t -> 3291684
+u -> 1015608
+v -> 276804
+w -> 1085040
+x -> 46860
+y -> 730752
+z -> 12936
+]0;cssc1729@edoras:~/projectzero/zero[cssc1729@edoras zero]$ ./testspecial 
+Special result file created successfully.
+, -> 745668
+. -> 798072
+: -> 15708
+; -> 32340
+! -> 63228
+]0;cssc1729@edoras:~/projectzero/zero[cssc1729@edoras zero]$ cd ..
+]0;cssc1729@edoras:~/projectzero[cssc1729@edoras projectzero]$ ls
+README.md  Test.log  [0m[38;5;27mdata[0m  [38;5;27mprojectzero[0m  [38;5;27mresult[0m  [38;5;27mzero[0m
+]0;cssc1729@edoras:~/projectzero[cssc1729@edoras projectzero]$ cs   d result/
+]0;cssc1729@edoras:~/projectzero/result[cssc1729@edoras result]$ ls
+result.txt  specialresult.txt
+]0;cssc1729@edoras:~/projectzero/result[cssc1729@edoras result]$ vim specialresult.txt 
+[?1049h[?1h=[2;1H½[6n[2;1H  [1;1H]11;?[1;30r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[30;1H"specialresult.txt" 7L, 100C[>c[1;1HFile created on: Thu Jul  6 13:44:54 2023
+
+, -> 745668
+. -> 798072
+: -> 15708
+; -> 32340
+! -> 63228
+[94m~                                                                                                                                             [9;1H~                                                                                                                                             [10;1H~                                                                                                                                             [11;1H~                                                                                                                                             [12;1H~                                                                                                                                             [13;1H~                                                                                                                                             [14;1H~                                                                                                                                             [15;1H~                                                                                                                                             [16;1H~                                                                                                                                             [17;1H~                                                                                                                                             [18;1H~                                                                                                                                             [19;1H~                                                                                                                                             [20;1H~                                                                                                                                             [21;1H~                                                                                                                                             [22;1H~                                                                                                                                             [23;1H~                                                                                                                                             [24;1H~                                                                                                                                             [25;1H~                                                                                                                                             [26;1H~                                                                                                                                             [27;1H~                                                                                                                                             [28;1H~                                                                                                                                             [29;1H~                                                                                                                                             [m[30;125H1,1[11CAll[1;1H[?12l[?25h[27m[m[H[2J[?25l[1;1HFile created on: Thu Jul  6 13:44:54 2023
+
+, -> 745668
+. -> 798072
+: -> 15708
+; -> 32340
+! -> 63228
+[94m~                                                                                                                                             [9;1H~                                                                                                                                             [10;1H~                                                                                                                                             [11;1H~                                                                                                                                             [12;1H~                                                                                                                                             [13;1H~                                                                                                                                             [14;1H~                                                                                                                                             [15;1H~                                                                                                                                             [16;1H~                                                                                                                                             [17;1H~                                                                                                                                             [18;1H~                                                                                                                                             [19;1H~                                                                                                                                             [20;1H~                                                                                                                                             [21;1H~                                                                                                                                             [22;1H~                                                                                                                                             [23;1H~                                                                                                                                             [24;1H~                                                                                                                                             [25;1H~                                                                                                                                             [26;1H~                                                                                                                                             [27;1H~                                                                                                                                             [28;1H~                                                                                                                                             [29;1H~                                                                                                                                             [m[30;125H1,1[11CAll"specialresult.txt" 7L, 100C[1;1H[?12l[?25h[?25l[30;1H[K[30;1H:[?12l[?25hq[?25l[30;1H[K[30;1H[?1l>[?12l[?25h[?1049l]0;cssc1729@edoras:~/projectzero/result[cssc1729@edoras result]$ vim result.txt 
+[?1049h[?1h=[2;1H½[6n[2;1H  [1;1H]11;?[1;30r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[30;1H"result.txt" 29L, 385C[>c[1;1HFile created on: Thu Jul  6 13:44:47 2023
+
+Letter -> Frequency
+a -> 2973036
+b -> 556908
+c -> 765864
+d -> 1786752
+e -> 4883076
+f -> 765336
+g -> 809292
+h -> 2818068
+i -> 2586276
+j -> 35112
+k -> 401412
+l -> 1728276
+m -> 1050852
+n -> 2509320
+o -> 2766192
+p -> 562848
+q -> 28776
+r -> 2177076
+s -> 2465496
+t -> 3291684
+u -> 1015608
+v -> 276804
+w -> 1085040
+x -> 46860
+y -> 730752
+z -> 12936[30;125H1,1[11CAll[1;1H[?12l[?25h[27m[m[H[2J[?25l[1;1HFile created on: Thu Jul  6 13:44:47 2023
+
+Letter -> Frequency
+a -> 2973036
+b -> 556908
+c -> 765864
+d -> 1786752
+e -> 4883076
+f -> 765336
+g -> 809292
+h -> 2818068
+i -> 2586276
+j -> 35112
+k -> 401412
+l -> 1728276
+m -> 1050852
+n -> 2509320
+o -> 2766192
+p -> 562848
+q -> 28776
+r -> 2177076
+s -> 2465496
+t -> 3291684
+u -> 1015608
+v -> 276804
+w -> 1085040
+x -> 46860
+y -> 730752
+z -> 12936[30;125H1,1[11CAll"result.txt" 29L, 385C[1;1H[?12l[?25h[?25l[30;1H[K[30;1H:[?12l[?25hq[?25l[30;1H[K[30;1H[?1l>[?12l[?25h[?1049l]0;cssc1729@edoras:~/projectzero/result[cssc1729@edoras result]$ exit
+exit
+
+Script done on Thu Jul  6 13:45:31 2023
