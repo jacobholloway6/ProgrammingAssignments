@@ -7,9 +7,12 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include<unistd.h> 
+#include <unistd.h> 
 #include <stdbool.h> 
+#include <time.h>
 #include "count.h"
+
+
 
 /*
  * Print the frequencies of alphabetical characters stored in array: charfreq[] to output screen in the format as:
@@ -30,22 +33,32 @@ void displayalphabetfreq(long charfreq[], int size)
 	  }
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
+
 	
-	  printf("Please enter 2 arguments only eg.\"./testmulthreads #_of__threads!!\"\n");
+	time_t currentTime;
+	time(&currentTime);
+    char *timeString = ctime(&currentTime);
+
+
+    if (argc < 2) {
+        printf("Please enter 2 arguments only eg.\"./testmulthreads #_of__threads!!\"\n");
+        return 1;
+    }
+
+    int num_threads = atoi(argv[1]);
 	  
-	  int num_threads = atoi(argv[1]);  
-	  
-	  char *path = "../data";           // the data *.txt files are under this folder
-	  char *filetowrite = "../result/result.txt";    // the frequency of all alphabetical letters will be written in this file
+	  char *path = "/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/Pzero/data";           // the data *.txt files are under this folder
+	  char *filetowrite = "/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/two/result/filetowrite.txt";    // the frequency of all alphabetical letters will be written in this file
 	  
 	  long alphabetfreq[ALPHABETSIZE] = {0}; // array to store the frequency of each alphablet letter, which should be alway up-to-date;
 	  
 	  
 	  alphabetcountmulthreads(path, filetowrite, alphabetfreq, num_threads);  // process the data files using mutiple threads
 	  
-	  printf("The results are counted as follows : \n");
+	  printf("\nTask was completed on : %s \n", timeString);
+	  printf("The results are counted as follows : \n\n");
+	  
 	  
 	  displayalphabetfreq(alphabetfreq, ALPHABETSIZE);  // print the frequency stored in the array to output screen
 }
