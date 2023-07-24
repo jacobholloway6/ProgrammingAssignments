@@ -35,3 +35,5 @@ They do not, when I started this assignment, I thought that adding more threads 
 
  If not, why you think your current design is optimal?
 
+I believe there is always room for improvement and optimization. One way that I might be able to improve this is with the use of a Thread Pool which will allow my program to pull from the threads that are already allocated for my program rather generating a new thread and then destroying it when it is finished its task. Another option is how I am designating the resources when going through the files, I could change it to use a work queue so that the threads are able to grab another text file when they have finished one instead of only having the threads perform their own tasks. This is equivalent to someone finishing a task early and then helping someone else who might be taking longer on their own task. I am unsure if in my case the times are supposed to be getting larger and larger when I provide the program with more threads but I feel like it should be going down so there will always be room for optimization
+
