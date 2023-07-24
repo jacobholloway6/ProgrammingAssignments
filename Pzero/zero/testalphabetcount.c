@@ -32,8 +32,8 @@ void displayalphabetfreq(long charfreq[], int size)
 int main()
 {
 	  
-	  char *path = "/home/cs/zhengli/cssc1729/programmingAssignments/projectzero/data";           // the data *.txt files are under this folder
-	  char *filetowrite = "/home/cs/zhengli/cssc1729/programmingAssignments/projectzero/result/result.txt";    // the frequency of all alphabetical letters will be written in this file
+	  char *path = "/home/cs/zhengli/cssc1729/ProgrammingAssignments/Pzero/data";           // the data *.txt files are under this folder
+	  char *filetowrite = "/home/cs/zhengli/cssc1729/ProgrammingAssignments/Pzero/result/result.txt";    // the frequency of all alphabetical letters will be written in this file
 	  
 	  long alphabetfreq[ALPHABETSIZE] = {0}; // array to store the frequency of each alphablet letter
 	  
