@@ -4,7 +4,7 @@
 
 PROGRAM =testmulthreads
 CC = gcc
-CFLAGS = -g -std=c99 
+CFLAGS = -g -std=c99
 
 ${PROGRAM}:	${PROGRAM}.o alphabetcountmulthreads.o
 		${CC} -o ${PROGRAM} ${PROGRAM}.o alphabetcountmulthreads.o -lpthread -lm

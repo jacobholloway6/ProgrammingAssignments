@@ -1,3 +1,6 @@
+File created on: Mon Jul 24 12:50:01 2023
+
+Letter -> Frequency
 a -> 2973036
 b -> 556908
 c -> 765864
