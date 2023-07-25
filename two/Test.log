@@ -1,0 +1,159 @@
+Script started on Mon Jul 24 00:03:04 2023
+]0;cssc1729@edoras:~/ProgrammingAssignments/two[?1034h[cssc1729@edoras two]$ make clean
+rm -f *.o testmulthreads		
+]0;cssc1729@edoras:~/ProgrammingAssignments/two[cssc1729@edoras two]$ make
+gcc -g -std=c99    -c -o testmulthreads.o testmulthreads.c
+[01m[Ktestmulthreads.c:[m[K In function '[01m[Kmain[m[K':
+[01m[Ktestmulthreads.c:57:4:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function '[01m[Kalphabetcountmulthreads[m[K' [-Wimplicit-function-declaration]
+    alphabetcountmulthreads(path, filetowrite, alphabetfreq, num_threads);  // process the data files using mutiple threads
+[01;32m[K    ^[m[K
+gcc -g -std=c99    -c -o alphabetcountmulthreads.o alphabetcountmulthreads.c
+gcc -o testmulthreads testmulthreads.o alphabetcountmulthreads.o -lpthread -lm
+]0;cssc1729@edoras:~/ProgrammingAssignments/two[cssc1729@edoras two]$ ./testmulthreads 3
+Thread id = 14583 (thread: 140429135898368) is processing files with index from 0 to 9!
+Thread id = 140429135898368 is processing file input_00.txt
+Thread id = 14583 (thread: 140429119112960) is processing files with index from 20 to 30!
+Thread id = 140429119112960 is processing file input_20.txt
+Thread id = 14583 (thread: 140429127505664) is processing files with index from 10 to 19!
+Thread id = 140429127505664 is processing file input_10.txt
+Thread id = 140429119112960 is processing file input_21.txt
+Thread id = 140429135898368 is processing file input_01.txt
+Thread id = 140429127505664 is processing file input_11.txt
+Thread id = 140429119112960 is processing file input_22.txt
+Thread id = 140429127505664 is processing file input_12.txt
+Thread id = 140429135898368 is processing file input_02.txt
+Thread id = 140429119112960 is processing file input_23.txt
+Thread id = 140429127505664 is processing file input_13.txt
+Thread id = 140429135898368 is processing file input_03.txt
+Thread id = 140429119112960 is processing file input_24.txt
+Thread id = 140429127505664 is processing file input_14.txt
+Thread id = 140429127505664 is processing file input_15.txt
+Thread id = 140429119112960 is processing file input_25.txt
+Thread id = 140429135898368 is processing file input_04.txt
+Thread id = 140429127505664 is processing file input_16.txt
+Thread id = 140429119112960 is processing file input_26.txt
+Thread id = 140429135898368 is processing file input_05.txt
+Thread id = 140429127505664 is processing file input_17.txt
+Thread id = 140429119112960 is processing file input_27.txt
+Thread id = 140429135898368 is processing file input_06.txt
+Thread id = 140429127505664 is processing file input_18.txt
+Thread id = 140429119112960 is processing file input_28.txt
+Thread id = 140429135898368 is processing file input_07.txt
+Thread id = 140429119112960 is processing file input_29.txt
+Thread id = 140429127505664 is processing file input_19.txt
+Thread id = 140429119112960 is processing file input_30.txt
+Thread id = 140429135898368 is processing file input_08.txt
+Thread id = 140429127505664 is done!
+Thread id = 140429119112960 is done!
+Thread id = 140429135898368 is processing file input_09.txt
+Thread id = 140429135898368 is done!
+File created successfully!
+
+Task was completed on : Mon Jul 24 00:03:17 2023
+ 
+The results are counted as follows : 
+
+a -> 2973036
+b -> 556908
+c -> 765864
+d -> 1786752
+e -> 4883076
+f -> 765336
+g -> 809292
+h -> 2818068
+i -> 2586276
+j -> 35112
+k -> 401412
+l -> 1728276
+m -> 1050852
+n -> 2509320
+o -> 2766192
+p -> 562848
+q -> 28776
+r -> 2177076
+s -> 2465496
+t -> 3291684
+u -> 1015608
+v -> 276804
+w -> 1085040
+x -> 46860
+y -> 730752
+z -> 12936
+]0;cssc1729@edoras:~/ProgrammingAssignments/two[cssc1729@edoras two]$ ./testmulthreads 3 5
+Thread id = 14593 (thread: 140630217332480) is processing files with index from 0 to 5!
+Thread id = 140630217332480 is processing file input_00.txt
+Thread id = 14593 (thread: 140630200547072) is processing files with index from 12 to 17!
+Thread id = 140630200547072 is processing file input_12.txt
+Thread id = 14593 (thread: 140630208939776) is processing files with index from 6 to 11!
+Thread id = 14593 (thread: 140630192154368) is processing files with index from 18 to 23!
+Thread id = 140630192154368 is processing file input_18.txt
+Thread id = 140630208939776 is processing file input_06.txt
+Thread id = 14593 (thread: 140630183761664) is processing files with index from 24 to 30!
+Thread id = 140630183761664 is processing file input_24.txt
+Thread id = 140630200547072 is processing file input_13.txt
+Thread id = 140630208939776 is processing file input_07.txt
+Thread id = 140630192154368 is processing file input_19.txt
+Thread id = 140630183761664 is processing file input_25.txt
+Thread id = 140630217332480 is processing file input_01.txt
+Thread id = 140630183761664 is processing file input_26.txt
+Thread id = 140630192154368 is processing file input_20.txt
+Thread id = 140630200547072 is processing file input_14.txt
+Thread id = 140630208939776 is processing file input_08.txt
+Thread id = 140630192154368 is processing file input_21.txt
+Thread id = 140630183761664 is processing file input_27.txt
+Thread id = 140630200547072 is processing file input_15.txt
+Thread id = 140630208939776 is processing file input_09.txt
+Thread id = 140630217332480 is processing file input_02.txt
+Thread id = 140630192154368 is processing file input_22.txt
+Thread id = 140630200547072 is processing file input_16.txt
+Thread id = 140630183761664 is processing file input_28.txt
+Thread id = 140630208939776 is processing file input_10.txt
+Thread id = 140630217332480 is processing file input_03.txt
+Thread id = 140630200547072 is processing file input_17.txt
+Thread id = 140630183761664 is processing file input_29.txt
+Thread id = 140630192154368 is processing file input_23.txt
+Thread id = 140630208939776 is processing file input_11.txt
+Thread id = 140630217332480 is processing file input_04.txt
+Thread id = 140630183761664 is processing file input_30.txt
+Thread id = 140630200547072 is done!
+Thread id = 140630192154368 is done!
+Thread id = 140630208939776 is done!
+Thread id = 140630183761664 is done!
+Thread id = 140630217332480 is processing file input_05.txt
+Thread id = 140630217332480 is done!
+File created successfully!
+
+Task was completed on : Mon Jul 24 00:03:25 2023
+ 
+The results are counted as follows : 
+
+a -> 2973036
+b -> 556908
+c -> 765864
+d -> 1786752
+e -> 4883076
+f -> 765336
+g -> 809292
+h -> 2818068
+i -> 2586276
+j -> 35112
+k -> 401412
+l -> 1728276
+m -> 1050852
+n -> 2509320
+o -> 2766192
+p -> 562848
+q -> 28776
+r -> 2177076
+s -> 2465496
+t -> 3291684
+u -> 1015608
+v -> 276804
+w -> 1085040
+x -> 46860
+y -> 730752
+z -> 12936
+]0;cssc1729@edoras:~/ProgrammingAssignments/two[cssc1729@edoras two]$ exit
+exit
+
+Script done on Mon Jul 24 00:03:34 2023
