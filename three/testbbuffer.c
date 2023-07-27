@@ -18,7 +18,11 @@ int main()
     long int i;
 
     srand(time(NULL));
-    
+    buffer_t buffer;
+	pthread_t consumer_tid[CONSUMERS];
+	pthread_t producer_tid[PRODUCERS];
+	pthread_mutex_t mutex;
+	sem_t full, empty;
     /*
      * Initialize global varabiles
      */
