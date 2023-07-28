@@ -33,7 +33,6 @@ extern pthread_t producer_tid[PRODUCERS]; // consumer threads
 extern pthread_mutex_t mutex;
 extern sem_t full, empty;
 
-//TODO: You may need to declare more global variables here ...
 
 void * producer(void *param);
 void * consumer(void *param);
