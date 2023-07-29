@@ -1,0 +1,78 @@
+Script started on Sat Jul 29 00:08:18 2023
+]0;cssc1729@edoras:~/ProgrammingAssignments/three[?1034h[cssc1729@edoras three]$ make
+gcc -g -std=c99    -c -o testbbuffer.o testbbuffer.c
+gcc -g -std=c99    -c -o bbuffer.o bbuffer.c
+gcc -o testbbuffer testbbuffer.o bbuffer.o -lpthread -lm
+]0;cssc1729@edoras:~/ProgrammingAssignments/three[cssc1729@edoras three]$ ./testbbuffer 
+consumer 0 started!
+consumer 4 started!
+consumer 2 started!
+consumer 1 started!
+consumer 3 started!
+producer 0 started!
+producer 1 started!
+producer 1: inserted item 6275 into buffer index 0
+producer 2 started!
+producer 2: inserted item 3483 into buffer index 1
+consumer 0: removed item 6275 from buffer index 0
+consumer 1: removed item 3483 from buffer index 1
+producer 2: inserted item 7183 into buffer index 2
+producer 0: inserted item 9357 into buffer index 3
+consumer 0: removed item 7183 from buffer index 2
+producer 0: inserted item 53 into buffer index 4
+consumer 1: removed item 9357 from buffer index 3
+consumer 1: removed item 53 from buffer index 4
+producer 2: inserted item 8190 into buffer index 0
+consumer 1: removed item 8190 from buffer index 0
+producer 1: inserted item 8592 into buffer index 1
+producer 1: inserted item 2999 into buffer index 2
+consumer 2: removed item 8592 from buffer index 1
+consumer 4: removed item 2999 from buffer index 2
+producer 0: inserted item 5755 into buffer index 3
+consumer 3: removed item 5755 from buffer index 3
+producer 2: inserted item 5789 into buffer index 4
+consumer 2: removed item 5789 from buffer index 4
+producer 0: inserted item 8416 into buffer index 0
+consumer 4: removed item 8416 from buffer index 0
+producer 1: inserted item 1900 into buffer index 1
+producer 1: inserted item 4812 into buffer index 2
+consumer 1: removed item 1900 from buffer index 1
+consumer 2: removed item 4812 from buffer index 2
+producer 2: inserted item 6017 into buffer index 3
+consumer 3: removed item 6017 from buffer index 3
+producer 0: inserted item 3262 into buffer index 4
+consumer 0: removed item 3262 from buffer index 4
+producer 2: inserted item 5924 into buffer index 0
+producer 1: inserted item 6145 into buffer index 1
+consumer 4: removed item 5924 from buffer index 0
+producer 1: inserted item 4111 into buffer index 2
+consumer 2: removed item 6145 from buffer index 1
+consumer 2: removed item 4111 from buffer index 2
+producer 2: inserted item 4760 into buffer index 3
+producer 2: inserted item 1465 into buffer index 4
+consumer 3: removed item 4760 from buffer index 3
+consumer 3: removed item 1465 from buffer index 4
+producer 1: inserted item 4064 into buffer index 0
+consumer 1: removed item 4064 from buffer index 0
+producer 0: inserted item 6676 into buffer index 1
+consumer 4: removed item 6676 from buffer index 1
+producer 2: inserted item 3761 into buffer index 2
+consumer 2: removed item 3761 from buffer index 2
+producer 1: inserted item 6758 into buffer index 3
+producer 1: inserted item 8875 into buffer index 4
+consumer 3: removed item 6758 from buffer index 3
+consumer 0: removed item 8875 from buffer index 4
+producer 0: inserted item 6609 into buffer index 0
+producer 2: inserted item 963 into buffer index 1
+consumer 4: removed item 6609 from buffer index 0
+consumer 4: removed item 963 from buffer index 1
+producer 0: inserted item 9186 into buffer index 2
+consumer 0: removed item 9186 from buffer index 2
+producer 0: inserted item 298 into buffer index 3
+consumer 3: removed item 298 from buffer index 3
+producer 0: inserted item 8110 into buffer index 4
+consumer 0: removed item 8110 from buffer index 4
+]0;cssc1729@edoras:~/ProgrammingAssignments/three[cssc1729@edoras three]$ exit
+exit
+
+Script done on Sat Jul 29 00:08:48 2023
