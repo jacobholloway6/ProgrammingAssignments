@@ -4,9 +4,9 @@ Please answer the following questions to explain your implementation (Directly w
 
 
 
-1. Which are the critical regions need to be protected for mutula exclusion? Why are they? 
+1. Which are the critical regions need to be protected for mutual exclusion? Why are they? 
 
-
+When it comes to the regions that need to be protected, the buffer is important for exclusion as it allows for specific processes and information to not overwrite one another. It is important because it is protected to prevent any race conditions from the software. If neither the producer or consumer have mutual exclusion it can lead to one either adding too much(producer) or taking too many things(consumer). It is important that each of these processes are handled correctly to make sure that all data is processed and handled correctly and the OS can perform reliably. 
 
 
 
@@ -24,14 +24,25 @@ Please answer the following questions to explain your implementation (Directly w
 
 Please explain how they are satisfied in your design (you need to explain one by one!)
 
+1. In my insert_item function an item is added to the buffer and the specific print statement is printed to the terminal with the information from the requirements and the buffer will increment by one. 
 
+2. In the remove_item function it will pull from the buffer and print out that it has removed the item from the buffer with the index it has pulled from. 
 
+3. Inside of the insert_item function there is code that blocks insertion if the buffer is full which is "sem_wait(&full)" which makes sure that the system will wait if the buffer is full and waiting on consumer to pull the item. 
 
+4. Within the remove_item function the code "sem_wait(&empty)" will stop the consumer from pulling if the buffer has nothing to pull from. 
 
+5. Insert_item function has a mutex that makes sure that only one thread can hold the mutex at any given time preventing a potential lock. 
+
+6. Remove_item also has a mutex that aims to prevent a lock as well. 
+
+7. Given that the print statements are contained within the areas of the functions that also include the mutex it allows for the statements to be printed when completed and not at random moments. 
 
 
 
 3) Why you think your design is the most effective one? Is there any other design also works but less effective? 
+
+I would not say that my design the most effective one but I do think it does the task that is required of it pretty well. If someone designed the code to lock the entire buffer anytime it is accessed it would be able to add and take but only one at a time which is not effective by todays computer standards. I am sure there are many different ways to implement the producer consumer problem that can work but it is dependent on how the computer will check for the ability to use the buffers. 
 
 
 
