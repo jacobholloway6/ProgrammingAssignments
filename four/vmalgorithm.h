@@ -4,10 +4,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
+#include <memory.h>
 
 /**************************************
- * The parameters of memory and disk pages 
+ * The parameters of memory and disk pages
  *
  * PageFrameList: The dynamically-allocated array representing memory pages
  * FrameNR: the number of page frames in memory
@@ -19,29 +20,29 @@
  *
  */
 
-#define AccessPatternLength 20  // total number of memory access 
+#define AccessPatternLength 20 // total number of memory access
 
 typedef struct
 {
-    int *PageFrameList;     // The dynamically-allocated array representing memory pages
-    int nextToReplaced;	      // point to the next frame to be replaced
-}PageFrame;
+    int *PageFrameList; // The dynamically-allocated array representing memory pages
+    int nextToReplaced; // point to the next frame to be replaced
 
+} PageFrame;
 
+void initializePageFrame();
+void printAccessPattern();
+void generateAccessPattern();
 
 /*
- * The following global variables will be used in the program, please understand each of them before starting your coding ... 
+ * The following global variables will be used in the program, please understand each of them before starting your coding ...
  */
 
+extern int *accessPattern; // memory access pattern, for example: 4 2 2 0 1   means will access the page 4, 2, 2, 0 and 1 one by one in order
 
-extern int *accessPattern;        // memory access pattern, for example: 4 2 2 0 1   means will access the page 4, 2, 2, 0 and 1 one by one in order
+extern int ReferenceSZ; // range of pages to be accssed
+extern int FrameNR;     // the number of page frames in memory
 
-
-extern int ReferenceSZ;           // range of pages to be accssed
-extern int FrameNR;               // the number of page frames in memory
-
-extern PageFrame memory;          // representing the memory
-
+extern PageFrame memory; // representing the memory
 
 /* Algorithm Functions */
 
