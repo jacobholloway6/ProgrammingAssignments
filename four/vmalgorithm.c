@@ -79,16 +79,16 @@ int FIFO()
    int pageIndex;
    int page;
    int j;
-   int framaNum;
+   int frameNum;
 
    // bee sure that we never go beyond the number of virtual page
    if (FrameNR > ReferenceSZ)
    {
-      framaNum = ReferenceSZ;
+      frameNum = ReferenceSZ;
    }
    else
    {
-      framaNum = FrameNR;
+      frameNum = FrameNR;
    }
 
    // iterate over the pattern
@@ -99,7 +99,7 @@ int FIFO()
 
       // try to find a physical page which this page is in at the moment
       pageIndex = -1;
-      for (j = 0; j < framaNum; j++)
+      for (j = 0; j < frameNum; j++)
       {
          if (page == memory.PageFrameList[j])
          {
@@ -116,10 +116,10 @@ int FIFO()
          // fill the page in the chosen slot
          memory.PageFrameList[memory.nextToReplaced] = page;
          // update the index of the next chosen slot
-         memory.nextToReplaced = (memory.nextToReplaced + 1) % framaNum;
+         memory.nextToReplaced = (memory.nextToReplaced + 1) % frameNum;
       }
       // print the physical memory out
-      for (j = 0; j < framaNum; j++)
+      for (j = 0; j < frameNum; j++)
       {
          printf("%3d", memory.PageFrameList[j]);
       }
