@@ -29,7 +29,7 @@ typedef struct
 
 } PageFrame;
 
-void initializePageFrame();
+void initializePageFrame(); // Functions are initialized so that there are not errors being generated when compiling.
 void printAccessPattern();
 void generateAccessPattern();
 

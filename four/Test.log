@@ -1,0 +1,113 @@
+Script started on Tue Aug  1 20:35:03 2023
+[0m[49m[39m[27m[24m[K
+[1A7[0m[49m[39m[0m[49m[39m[0m[49m[39m[0m[49m [0m[49m[38;5;31m [1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mDev[0m[38;5;103m[49m[38;5;31m/[38;5;103mC[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mProgrammingAssignments[0m[38;5;39m[49m[38;5;31m/[1m[38;5;31m[38;5;39mfour[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[?2004h[?25l8[0m[49m[39m[27m[24m[J]2;jacobholloway@Jacobs-MacBook-Pro:~/Developer/CS480Assignments/ProgrammingAssignments/four]1;..ignments/four]7;file://Jacobs-MacBook-Pro.local/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/four\[0m[38;5;31m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                           [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[49m[39m[0m[49m[39m[0m[49m[39m[0m[49m [0m[49m[38;5;31m [1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mDev[0m[38;5;103m[49m[38;5;31m/[38;5;103mC[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mProgrammingAssignments[0m[38;5;39m[49m[38;5;31m/[1m[38;5;31m[38;5;39mfour[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[0m[38;5;178m[49m[38;5;76m[0m[38;5;76m[49m[38;5;178m [38;5;76m main [38;5;178m!7 [38;5;39m?1[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?25h[?2004hm[1m[31mm[0m[39m[1m[31mm[0m[39m[90mak[90me[39m[K[A[57C[1m[31mm[1m[31ma[0m[39m[1m[31mm[1m[31ma[1m[31mk[0m[39m[90me[39m[A[59C[1m[31mk[1m[31me[0m[39m[A[56C[0m[32mm[0m[32ma[0m[32mk[32me[39m[32me[32m [39m[32me[39m[39m [90mclean[39m[39mc[39ml[39me[39ma[39mn[?1l>[?2004l
+]2;make clean]1;makerm -f *.o testvm
+[1m[7m%[27m[1m[0m                                                            ]2;jacobholloway@Jacobs-MacBook-Pro:~/Developer/CS480Assignments/ProgrammingAssignments/four]1;..ignments/four]7;file://Jacobs-MacBook-Pro.local/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/four\[0m[49m[39m[K
+[0m[27m[24m[J[0m[49m[39m[0m[49m[39m[0m[49m[39m[0m[49m [0m[49m[38;5;31m [1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mDev[0m[38;5;103m[49m[38;5;31m/[38;5;103mC[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mProgrammingAssignments[0m[38;5;39m[49m[38;5;31m/[1m[38;5;31m[38;5;39mfour[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[0m[38;5;178m[49m[38;5;76m[0m[38;5;76m[49m[38;5;178m [38;5;76m main [38;5;178m!7 [38;5;39m?1[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004hm[1m[31mm[0m[39m[1m[31mm[0m[39m[90mak[90me[90m clean[39m[K[A[51C[1m[31mm[1m[31ma[0m[39m[1m[31mm[1m[31ma[1m[31mk[0m[39m[90me[39m[A[59C[1m[31mk[1m[31me[0m[39m[A[56C[0m[32mm[0m[32ma[0m[32mk[32me[39m[32me[39m[39m [39m [39m [39m [39m [39m [?1l>[?2004l
+]2;make]1;makecc    -c -o testvm.o testvm.c
+cc    -c -o vmalgorithm.o vmalgorithm.c
+gcc testvm.o vmalgorithm.o -o testvm 
+[1m[7m%[27m[1m[0m                                                            ]2;jacobholloway@Jacobs-MacBook-Pro:~/Developer/CS480Assignments/ProgrammingAssignments/four]1;..ignments/four]7;file://Jacobs-MacBook-Pro.local/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/four\[0m[49m[39m[K
+[0m[27m[24m[J[0m[49m[39m[0m[49m[39m[0m[49m[39m[0m[49m [0m[49m[38;5;31m [1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mDev[0m[38;5;103m[49m[38;5;31m/[38;5;103mC[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mProgrammingAssignments[0m[38;5;39m[49m[38;5;31m/[1m[38;5;31m[38;5;39mfour[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[0m[38;5;178m[49m[38;5;76m[0m[38;5;76m[49m[38;5;178m [38;5;76m main [38;5;178m!7 [38;5;39m?1[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h.[32m.[39m[32m.[39m[90m/t[90me[90mstvm 10 5[39m[K[A[48C[32m.[32m/[39m[4m[32m.[4m[32m/[24m[39m[39mte[39ms[39mt[39mv[39mm[39m [39m1[39m0[39m [39m5[A[47C[24m[32m.[24m[32m/[32mt[32me[32ms[32mt[32mv[32mm[39m[5C[?1l>[?2004l
+]2;./testvm 10 5]1;./testvmThe randomized Access Pattern: 3 5 0 7 4 5 9 0 9 5 1 4 8 5 8 0 2 9 2 7 
+Running program using FIFO algorithm ... ...
+  3 -1 -1 -1 -1
+  3  5 -1 -1 -1
+  3  5  0 -1 -1
+  3  5  0  7 -1
+  3  5  0  7  4
+  3  5  0  7  4
+  9  5  0  7  4
+  9  5  0  7  4
+  9  5  0  7  4
+  9  5  0  7  4
+  9  1  0  7  4
+  9  1  0  7  4
+  9  1  8  7  4
+  9  1  8  5  4
+  9  1  8  5  4
+  9  1  8  5  0
+  2  1  8  5  0
+  2  9  8  5  0
+  2  9  8  5  0
+  2  9  7  5  0
+page fault of FIFO: 13
+
+
+The Same Access Pattern: 3 5 0 7 4 5 9 0 9 5 1 4 8 5 8 0 2 9 2 7 
+Running program using LRU algorithm ... ...
+  3 -1 -1 -1 -1
+  3  5 -1 -1 -1
+  3  5  0 -1 -1
+  3  5  0  7 -1
+  3  5  0  7  4
+  3  5  0  7  4
+  9  5  0  7  4
+  9  5  0  7  4
+  9  5  0  7  4
+  9  5  0  7  4
+  9  5  0  1  4
+  9  5  0  1  4
+  9  5  8  1  4
+  9  5  8  1  4
+  9  5  8  1  4
+  0  5  8  1  4
+  0  5  8  2  4
+  0  5  8  2  9
+  0  5  8  2  9
+  0  7  8  2  9
+page fault of LRU: 12
+[1m[7m%[27m[1m[0m                                                            ]2;jacobholloway@Jacobs-MacBook-Pro:~/Developer/CS480Assignments/ProgrammingAssignments/four]1;..ignments/four]7;file://Jacobs-MacBook-Pro.local/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/four\[0m[49m[39m[K
+[0m[27m[24m[J[0m[49m[39m[0m[49m[39m[0m[49m[39m[0m[49m [0m[49m[38;5;31m [1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mDev[0m[38;5;103m[49m[38;5;31m/[38;5;103mC[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mProgrammingAssignments[0m[38;5;39m[49m[38;5;31m/[1m[38;5;31m[38;5;39mfour[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[0m[38;5;178m[49m[38;5;76m[0m[38;5;76m[49m[38;5;178m [38;5;76m main [38;5;178m!7 [38;5;39m?1[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h./testvm 10 5[K[A[47C[32m.[32m/[32mt[32me[32ms[32mt[32mv[32mm[39m[5C [90m5[39m[39m [90m 5[39m [39m [39m [90m0 5[39m [39m [39m [39m [90m10 5[39m[39m7[39m [39m [39m [90m 3[39m[39m [39m3[?1l>[?2004l
+]2;./testvm 7 3]1;./testvmThe randomized Access Pattern: 4 4 1 2 0 4 5 3 0 0 4 5 6 2 6 2 1 4 3 6 
+Running program using FIFO algorithm ... ...
+  4 -1 -1
+  4 -1 -1
+  4  1 -1
+  4  1  2
+  0  1  2
+  0  4  2
+  0  4  5
+  3  4  5
+  3  0  5
+  3  0  5
+  3  0  4
+  5  0  4
+  5  6  4
+  5  6  2
+  5  6  2
+  5  6  2
+  1  6  2
+  1  4  2
+  1  4  3
+  6  4  3
+page fault of FIFO: 16
+
+
+The Same Access Pattern: 4 4 1 2 0 4 5 3 0 0 4 5 6 2 6 2 1 4 3 6 
+Running program using LRU algorithm ... ...
+  4 -1 -1
+  4 -1 -1
+  4  1 -1
+  4  1  2
+  0  1  2
+  0  4  2
+  0  4  5
+  3  4  5
+  3  0  5
+  3  0  5
+  3  0  4
+  5  0  4
+  5  6  4
+  5  6  2
+  5  6  2
+  5  6  2
+  1  6  2
+  1  4  2
+  1  4  3
+  6  4  3
+page fault of LRU: 16
+[1m[7m%[27m[1m[0m                                                            ]2;jacobholloway@Jacobs-MacBook-Pro:~/Developer/CS480Assignments/ProgrammingAssignments/four]1;..ignments/four]7;file://Jacobs-MacBook-Pro.local/Users/jacobholloway/Developer/CS480Assignments/ProgrammingAssignments/four\[0m[49m[39m[K
+[0m[27m[24m[J[0m[49m[39m[0m[49m[39m[0m[49m[39m[0m[49m [0m[49m[38;5;31m [1m[38;5;31m[38;5;39m~[0m[38;5;39m[49m[38;5;31m/[38;5;103mDev[0m[38;5;103m[49m[38;5;31m/[38;5;103mC[0m[38;5;103m[49m[38;5;31m/[1m[38;5;31m[38;5;39mProgrammingAssignments[0m[38;5;39m[49m[38;5;31m/[1m[38;5;31m[38;5;39mfour[0m[38;5;39m[49m[38;5;31m[0m[38;5;31m[49m[38;5;31m[0m[38;5;31m[49m [0m[38;5;31m[49m[38;5;178m[0m[38;5;178m[49m[38;5;76m[0m[38;5;76m[49m[38;5;178m [38;5;76m main [38;5;178m!7 [38;5;39m?1[0m[38;5;39m[49m[38;5;178m[0m[38;5;178m[49m [0m[38;5;178m[49m[38;5;76m❯[0m[38;5;76m[49m[38;5;76m[0m[38;5;76m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxi[90mt[39m[K[A[57C[1m[31me[1m[31mx[0m[39m[0m[32me[0m[32mx[39m[32me[32mx[32mi[39m[90mt[39m[A[57C[1m[31me[1m[31mx[1m[31mi[0m[39m[90mt[39m[A[59C[1m[31mi[1m[31mt[0m[39m[A[56C[0m[32me[0m[32mx[0m[32mi[32mt[39m[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Aug  1 20:35:24 2023

@@ -24,6 +24,7 @@ void generateAccessPattern()
       accessPattern[i] = rand() % ReferenceSZ;
       printf("%d ", accessPattern[i]);
    }
+   
    printf("\n");
 }
 
@@ -81,7 +82,7 @@ int FIFO()
    int j;
    int frameNum;
 
-   // bee sure that we never go beyond the number of virtual page
+   // be sure that we never go beyond the number of virtual page
    if (FrameNR > ReferenceSZ)
    {
       frameNum = ReferenceSZ;
@@ -143,26 +144,26 @@ int LRU()
    int pageIndex;
    int page;
    int j;
-   int framaNum;
-   int *registers;
-   int logicalClock;
+   int frameNum = (FrameNR > ReferenceSZ) ? ReferenceSZ : FrameNR;
+   int *registers = NULL;
+   int logicalClock = 0;
    int maxVal;
 
    if (FrameNR > ReferenceSZ)
    {
-      framaNum = ReferenceSZ;
+      frameNum = ReferenceSZ;
    }
    else
    {
-      framaNum = FrameNR;
+      frameNum = FrameNR;
    }
 
    /**
     * Add a register to every page frame - contain the last time that
     * the page in that frame was accessed
     */
-   registers = (int *)calloc(framaNum, sizeof(int));
-   for (i = 0; i < framaNum; i++)
+   registers = (int *)calloc(frameNum, sizeof(int));
+   for (i = 0; i < frameNum; i++)
    {
       registers[i] = 0;
    }
@@ -182,7 +183,7 @@ int LRU()
 
       // try to find a physical page which this page is in at the moment
       pageIndex = -1;
-      for (j = 0; j < framaNum; j++)
+      for (j = 0; j < frameNum; j++)
       {
          if (page == memory.PageFrameList[j])
          {
@@ -202,7 +203,7 @@ int LRU()
 
          // the life of page cannot be longer than AccessPatternLength
          maxVal = AccessPatternLength;
-         for (j = 0; j < framaNum; j++)
+         for (j = 0; j < frameNum; j++)
          {
             if (registers[j] < maxVal)
             {
@@ -221,7 +222,7 @@ int LRU()
          registers[pageIndex] = logicalClock;
       }
       // print the physical memory out
-      for (j = 0; j < framaNum; j++)
+      for (j = 0; j < frameNum; j++)
       {
          printf("%3d", memory.PageFrameList[j]);
       }

@@ -21,14 +21,14 @@ int main(int argc, char* argv[])
       2) comment out line 29 - line 33
      ****/
     
-    //generateAccessPattern();   // Please uncomment the following line for more self-testing
+    generateAccessPattern();   // Please uncomment the following line for more self-testing
         
     /*
      * Please comment out the following five lines for more self-testing
      */
-    testmode = 1;
-    int pattern[20] = {5,2,2,0,4,6,4,4,1,3,4,5,0,4,5,6,2,0,0,1};
-    accessPattern = pattern;
+    //testmode = 1;
+    //int pattern[20] = {5,2,2,0,4,6,4,4,1,3,4,5,0,4,5,6,2,0,0,1};
+    //accessPattern = pattern;
     /********************************************************************************************/
    
 
