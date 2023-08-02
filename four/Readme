@@ -1,2 +1,29 @@
-Please elaborate how you implement your FIFO and LRU replacement algorithm.
-You need to explain your design, not just paste source code here ... 
+## Created By: Jacob Holloway SDSU 2023
+
+
+## Page Replacement Algorithms: FIFO and LRU
+
+This code implements two fundamental page replacement algorithms, namely First In First Out (FIFO) and Least Recently Used (LRU), to simulate memory access and page fault handling. 
+
+### First In First Out (FIFO)
+
+FIFO is a page replacement policy that evicts the oldest page from memory. Which is implemented on the assumption that the page loaded into memory first should be the one to be replaced first.
+
+The FIFO function simulates memory access according to a predefined access pattern. With each memory reference, it checks if the referred page is currently loaded into memory. If the page is not found (a situation known as a "page fault"), the function loads the page into memory following the FIFO policy, replacing the oldest page if memory is already full. 
+
+The function counts the total number of page faults that occur during the simulation. This count can be used as a performance metric for the FIFO policy: a lower number of page faults indicates more efficient memory management.
+
+### Least Recently Used (LRU)
+
+Unlike FIFO, which bases replacement purely on load order, LRU takes into account how recently each page has been accessed. The assumption in this policy is that a page accessed in the recent past is likely to be accessed again soon, so the page to be replaced should be the one that has not been accessed for the longest time.
+
+The LRU function employs a "logical clock" and a set of registers to implement this policy. Like the FIFO function, it simulates memory access following a predefined access pattern, checking for each reference whether the page is loaded into memory.
+
+When a page fault occurs, the LRU function finds the least recently used page by looking for the oldest logical time among the registers, each of which keeps track of the last access time of a corresponding page. The page with the oldest time stamp is then replaced with the newly referred page.
+
+Just like the FIFO function, the LRU function keeps a count of the total number of page faults. This number serves as a performance metric for the LRU policy, with a lower number indicating more efficient memory management.
+
+In conclusion, both FIFO and LRU algorithms provide mechanisms to manage memory in situations where the number of pages exceeds the available memory frames. The effectiveness of these algorithms can be evaluated based on the number of page faults that occur during their operation.
+
+
+Within the vmalgorithm.c there are comments that go into further detail on what my program is doing. Please refer to the information within the code to follow what each line is doing or what each function might be doing. 
